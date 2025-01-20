@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Change Background Color On Click</title>
+  <title>Pomodoro Timer</title>
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
@@ -13,14 +16,19 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <button id="btn">Click Me</button>
+  <div id="timer-container">
+    <div id="timer-display" class="glass">
+      <p id="timer">25:00</p>
+    </div>
+    <div id="controls">
+      <button id="reset-btn"><ion-icon name="refresh-outline"></ion-icon></button>
+      <button id="start-btn"><ion-icon name="play-outline"></ion-icon></button>
+      <button id="skip-btn"><ion-icon name="play-skip-forward-outline"></ion-icon></button>
+    </div>
+  </div>
+  <button id="btn">Change Color</button>
   <div id="color-container">
     <p id="color-code">#000000</p>
-    <button id="copy-btn">Copy</button>
-  </div>
-  <div id="input-container">
-    <input id="color-input" type="text" placeholder="#000000" />
-    <button id="apply-btn">Apply</button>
   </div>
   <!-- Script -->
   <script src="script.js"></script>
